@@ -545,7 +545,6 @@ function carregar(){
     'https://data.whicdn.com/images/344907776/superthumb.jpg?t=1591157515',
     'https://data.whicdn.com/images/191187959/superthumb.jpg?t=1438009542',
     'https://data.whicdn.com/images/349206818/superthumb.jpg?t=1601608453',
-    'https://data.whicdn.com/images/338918615/superthumb.jpg?t=1577756391',
     'https://data.whicdn.com/images/351916435/superthumb.jpg?t=1609460495',
     'https://data.whicdn.com/images/351021762/superthumb.jpg?t=1606755309',
     'https://data.whicdn.com/images/351550954/superthumb.jpg?t=1608305844',
