@@ -1,0 +1,130 @@
+*{margin: 0; padding:0; border: none;}
+body{
+
+       background-color: #bfdbde;
+}
+
+nav{
+       background-color: #78a8bc;
+       height: 100%;
+       width: 100%;
+
+}
+
+       a:active, a:visited { 
+       border: none;
+       outline: none;
+   }
+
+.logo{
+       width: 56px;
+       height: 56px;
+       float: left;
+       background: url(icons8-gato-64.png) center center/56px no-repeat;
+       font-size: 0px;
+       text-align: center;
+       margin-left: 30px;
+}
+.titulo{
+       color: #ffffff;
+       font-size: 35px;
+       padding: 3% 150px;
+       text-align: center;
+       font-weight: bold;
+}
+
+#imagem{
+       width: 100%;
+       padding: 25px 0;
+
+}
+
+.imagem-an{
+
+       -webkit-animation: fadeInLeft 1.2s ease-in;
+       -moz-animation: fadeInLeft 1.2s ease-in;
+       -o-animation: fadeInLeft 1.2s ease-in;
+       animation: fadeInLeft 1.2s ease-in; 
+}
+
+#down{
+       width: 80px;
+       height: 80px;
+       margin-left: 29%;
+       border: none;
+       outline:none;
+
+}
+
+#down:hover{
+      
+       -webkit-animation: bounceInDown 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+       -moz-animation: bounceInDown 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+       -o-animation: bounceInDown 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation: bounceInDown 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+}
+
+.rodape{
+       background-color: #78a8bc;
+       height: 40px;
+       width: 100%;
+
+}
+
+#troda{
+       color: #596e79;
+       font-size: 15px;
+       padding-top: 10px;
+       text-align: center;
+
+}
+
+#restart{
+       width: 80px;
+       height: 80px;
+       margin-left: 2%;
+       border: none;
+        outline:none;
+
+}
+
+
+
+.rotated {
+       transform: rotate(360deg);
+       transition: all 1.5s ease-in-out 0s;
+     }
+
+
+
+/*Mobile First*/
+
+
+@media screen and (min-width:600px){
+
+       #imagem{
+              width: 450px;
+              height: 450px;
+              margin-left: 32%;
+       
+       }
+       #down{
+              width: 80px;
+              height: 80px;
+              margin-left: 42%;
+       
+       }
+       .logo{
+              width: 112px;
+              height: 112px;
+              float: left;
+              background: url(gato-100.png) center center/112px no-repeat;
+              font-size: 0px;
+              text-align: center;
+              margin-left: 30px;
+       }
+}
+
+
+
