@@ -1,7 +1,7 @@
 function carregar(){
-    var exibirImagem = window.document.getElementById('imagem')
+    var exibirImagem = window.document.getElementById('imagem') //Puxando o elemento da Imagem e colocando numa variavel
    
-    var urls = [
+    var urls = [ // Lista de urls da Imagem
     'https://i.pinimg.com/236x/e3/f6/46/e3f6464048f25d42482917aecee3e6e5.jpg',
     'https://i.pinimg.com/236x/c6/bf/7e/c6bf7eeb402d696b3e0c9eb887cf0d60.jpg',
     'https://i.pinimg.com/236x/26/d5/35/26d535c6522a69c27fed49b388246bcc.jpg',
@@ -1307,19 +1307,19 @@ function carregar(){
 
     ]   
     
-    const getRandomIntegerInclusive = Math.floor(Math.random() * (1302 - 3 +1)) + 3
+    const getRandomIntegerInclusive = Math.floor(Math.random() * (1302 - 3 +1)) + 3 // Gerando um numero aleatorio para buscar na array
 
-    var urlimg = urls[getRandomIntegerInclusive]
-    console.log(urlimg)
-
-    
-    exibirImagem.setAttribute('src',urlimg)
+    var urlimg = urls[getRandomIntegerInclusive] // Variavel recebendo o conteudo da array do numero aleatorio gerado acima
+   // console.log(urlimg)
 
     
-    var downImg = window.document.getElementById('btn')
-    downImg.setAttribute('href',urlimg)
+    exibirImagem.setAttribute('src',urlimg) // Setando o src da imagem 
 
-    an();
+    
+    var downImg = window.document.getElementById('btn') // Puxando o elemento do Botao e colocando numa variavel
+    downImg.setAttribute('href',urlimg)// Setando o href com a variavel da URL
+
+    an(); //Funçao com as Animações
     
    
 
@@ -1327,16 +1327,16 @@ function carregar(){
 
 function an(){
 
-    var exibirImagem = window.document.getElementById('imagem')
-    res= document.getElementById("restart")
-    res.addEventListener("click", function(e) {
+    var exibirImagem = window.document.getElementById('imagem') //Puxando o elemento da Imagem e colocando numa variavel
+    res= document.getElementById("restart") // Puxando o elemento da Imagem e colocando numa variavel
+    res.addEventListener("click", function(e) { // Adicionando um Listener para o click
         e.preventDefault;
-        exibirImagem.classList.remove("imagem-an");
+        exibirImagem.classList.remove("imagem-an"); // Removendo a animaçao atual da Imagem
         void exibirImagem.offsetWidth;
-        exibirImagem.classList.add("imagem-an");
-        res.classList.remove("rotated");
+        exibirImagem.classList.add("imagem-an"); // Adicionando Novamente a animação da Imagem 
+        res.classList.remove("rotated"); // Removendo a animaçao atual do botao de atualizar
         void res.offsetWidth;
-        res.classList.add("rotated");
+        res.classList.add("rotated"); // Adicionando Novamente animação do botao de atualizar 
         
       }, false);
 
